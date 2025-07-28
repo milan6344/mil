@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coinverse - Next Generation DeFi Platform</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Coinverse - Revolutionary DeFi platform for staking, trading, and earning rewards">
+    <meta name="keywords" content="defi, cryptocurrency, blockchain, staking, trading, solana">
+    <meta name="theme-color" content="#4F46E5">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/enhanced-theme.css" rel="stylesheet">
+    <link href="css/landing.css" rel="stylesheet">
+    
+    <!-- Dependencies -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white bg-opacity-80 backdrop-blur-lg dark:bg-gray-900 dark:bg-opacity-80">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="images/logo.png" alt="Coinverse" class="h-8">
+                    <span class="ml-2 text-xl font-bold gradient-text">Coinverse</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#tokenomics" class="nav-link">Tokenomics</a>
+                    <a href="#roadmap" class="nav-link">Roadmap</a>
+                    <a href="#team" class="nav-link">Team</a>
+                    <button id="themeToggle" class="btn-icon">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="/app" class="btn-enhanced px-6 py-2">Launch App</a>
+                </div>
+                <button class="md:hidden btn-icon" id="mobileMenuButton">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <h1 class="text-5xl md:text-6xl font-bold gradient-text">
+                        The Future of DeFi is Here
+                    </h1>
+                    <p class="text-xl text-gray-600 dark:text-gray-300">
+                        Experience next-generation DeFi with high yields, secure staking, and innovative trading features.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="/app" class="btn-enhanced px-8 py-3">Get Started</a>
+                        <a href="#features" class="btn-modern px-8 py-3">Learn More</a>
+                    </div>
+                    <div class="flex items-center space-x-8">
+                        <div class="text-center">
+                            <p class="text-3xl font-bold gradient-text">$10M+</p>
+                            <p class="text-gray-600 dark:text-gray-400">Total Value Locked</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-3xl font-bold gradient-text">50K+</p>
+                            <p class="text-gray-600 dark:text-gray-400">Active Users</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-3xl font-bold gradient-text">12%</p>
+                            <p class="text-gray-600 dark:text-gray-400">APY</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="images/platform-preview.png" alt="Platform Preview" class="rounded-lg shadow-2xl">
+                    <div class="absolute -bottom-6 -right-6 bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg">
+                        <p class="text-sm font-medium">Live Price</p>
+                        <p class="text-2xl font-bold gradient-text">$0.158 CVT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">
+                Revolutionary Features
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">High Yield Staking</h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Earn up to 12% APY by staking your CVT tokens in our secure staking pools.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Enhanced Security</h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Built on Solana with advanced security measures and regular audits.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Lightning Fast</h3>
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Experience instant transactions with minimal fees on Solana.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">
+                Tokenomics
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <div class="tokenomics-card">
+                        <h4 class="text-lg font-bold">Total Supply</h4>
+                        <p class="text-2xl font-bold gradient-text">100,000,000 CVT</p>
+                    </div>
+                    <div class="tokenomics-card">
+                        <h4 class="text-lg font-bold">Initial Price</h4>
+                        <p class="text-2xl font-bold gradient-text">$0.10</p>
+                    </div>
+                    <div class="tokenomics-card">
+                        <h4 class="text-lg font-bold">Staking Rewards</h4>
+                        <p class="text-2xl font-bold gradient-text">12% APY</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <canvas id="tokenomicsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">
+                Roadmap
+            </h2>
+            <div class="roadmap-timeline">
+                <div class="roadmap-item">
+                    <div class="date">Q1 2024</div>
+                    <div class="content">
+                        <h3>Platform Launch</h3>
+                        <ul>
+                            <li>Initial platform release</li>
+                            <li>Staking pools activation</li>
+                            <li>Community building</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="date">Q2 2024</div>
+                    <div class="content">
+                        <h3>Feature Expansion</h3>
+                        <ul>
+                            <li>Advanced trading features</li>
+                            <li>Mobile app beta</li>
+                            <li>Partnership announcements</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="date">Q3 2024</div>
+                    <div class="content">
+                        <h3>Ecosystem Growth</h3>
+                        <ul>
+                            <li>Cross-chain integration</li>
+                            <li>Governance implementation</li>
+                            <li>New product launches</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 gradient-text">
+                Our Team
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="team-card">
+                    <img src="images/team/member1.jpg" alt="Team Member" class="rounded-full w-32 h-32 mx-auto mb-4">
+                    <h3 class="text-xl font-bold">John Doe</h3>
+                    <p class="text-gray-600 dark:text-gray-400">CEO & Founder</p>
+                </div>
+                <!-- Add more team members -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8 gradient-text">
+                Ready to Start Your DeFi Journey?
+            </h2>
+            <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
+                Join thousands of users already earning high yields on Coinverse
+            </p>
+            <a href="/app" class="btn-enhanced px-8 py-3 text-lg">Launch App</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="images/logo-white.png" alt="Coinverse" class="h-8 mb-4">
+                    <p class="text-gray-400">
+                        Next-generation DeFi platform built on Solana
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#tokenomics">Tokenomics</a></li>
+                        <li><a href="#roadmap">Roadmap</a></li>
+                        <li><a href="#team">Team</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/docs">Documentation</a></li>
+                        <li><a href="/whitepaper">Whitepaper</a></li>
+                        <li><a href="/audit">Audit Report</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Coinverse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/landing.js" type="module"></script>
+</body>
+</html> 

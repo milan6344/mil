@@ -1,0 +1,2 @@
+// Airdrop routes
+module.exports = {};

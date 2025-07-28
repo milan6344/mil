@@ -1,0 +1,2 @@
+// Wallet logic
+module.exports = {};

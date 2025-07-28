@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeFi Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+    <script src="js/dashboard.js" defer></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation (Same as index.html) -->
+    
+    <!-- Dashboard Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Wallet Overview -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="stat-card">
+                <span class="stat-label">Wallet Balance</span>
+                <span id="walletBalance" class="stat-value">0.00 ETH</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Token Balance</span>
+                <span id="tokenBalance" class="stat-value">0.00 TKN</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Staked Amount</span>
+                <span id="stakedAmount" class="stat-value">0.00 TKN</span>
+            </div>
+        </div>
+
+        <!-- Staking Section -->
+        <div class="card mb-8">
+            <h2 class="text-xl font-bold mb-4">Staking</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Stake Tokens</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="form-label">Amount to Stake</label>
+                            <input type="number" id="stakeAmount" class="form-input" placeholder="0.00">
+                        </div>
+                        <button id="stakeButton" class="btn-primary w-full">Stake Tokens</button>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-2">Your Stakes</h3>
+                    <div class="space-y-4">
+                        <div class="card bg-gray-50">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <p class="text-sm text-gray-600">Staked Amount</p>
+                                    <p class="font-semibold" id="currentStake">0.00 TKN</p>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-600">Rewards</p>
+                                    <p class="font-semibold text-green-600" id="stakeRewards">0.00 TKN</p>
+                                </div>
+                            </div>
+                            <button id="unstakeButton" class="btn-outline w-full mt-4">Unstake</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transaction History -->
+        <div class="card">
+            <h2 class="text-xl font-bold mb-4">Transaction History</h2>
+            <div class="table-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="table-header px-6 py-3">Type</th>
+                            <th class="table-header px-6 py-3">Amount</th>
+                            <th class="table-header px-6 py-3">Status</th>
+                            <th class="table-header px-6 py-3">Date</th>
+                            <th class="table-header px-6 py-3">Transaction Hash</th>
+                        </tr>
+                    </thead>
+                    <tbody id="transactionHistory" class="divide-y divide-gray-200">
+                        <!-- Transactions will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

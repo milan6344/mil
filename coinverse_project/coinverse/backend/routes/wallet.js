@@ -1,0 +1,2 @@
+// Wallet routes
+module.exports = {};

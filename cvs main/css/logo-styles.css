@@ -1,0 +1,40 @@
+/* Logo Animation */
+.logo-spin {
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Gradient Text for Brand Name */
+.brand-text {
+    background: linear-gradient(135deg, #1E3A8A 0%, #7C3AED 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Logo Hover Effect */
+.logo-container:hover .logo-spin {
+    animation-duration: 2s;
+}
+
+/* Favicon sizes */
+link[rel="icon"] {
+    height: 32px;
+    width: 32px;
+}
+
+/* Mobile Logo Adjustments */
+@media (max-width: 640px) {
+    .logo-container svg {
+        height: 32px;
+        width: 32px;
+    }
+} 

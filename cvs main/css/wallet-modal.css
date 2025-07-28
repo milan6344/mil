@@ -1,0 +1,15 @@
+.wallet-option {
+    @apply transition-all duration-200 ease-in-out;
+}
+
+.wallet-option:hover {
+    @apply transform scale-105;
+}
+
+.connected {
+    @apply bg-green-500 hover:bg-green-600;
+}
+
+.wallet-icon {
+    @apply w-6 h-6 mr-3;
+} 

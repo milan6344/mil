@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Tokens - DeFi Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+    <script src="js/buy-tokens.js" defer></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation (Same as index.html) -->
+    
+    <!-- Buy Tokens Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Token Price Overview -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div class="stat-card-modern">
+                <span class="text-sm text-gray-500">Total Balance</span>
+                <div class="balance-display">
+                    <div class="currency-icon gradient-primary">$</div>
+                    <span class="text-2xl font-bold">1,234.56</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Current Token Price</span>
+                <span id="tokenPrice" class="stat-value">0.00 USDT</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Your Token Balance</span>
+                <span id="userTokenBalance" class="stat-value">0.00 TKN</span>
+            </div>
+        </div>
+
+        <!-- Buy Token Form -->
+        <div class="card mb-8">
+            <h2 class="text-xl font-bold mb-4">Buy Tokens</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Purchase with USDT</h3>
+                    <div class="space-y-4">
+                        <div class="form-group">
+                            <label class="form-label-modern">Amount to Stake</label>
+                            <div class="token-input">
+                                <input type="number" id="usdtAmount" class="form-input-modern" placeholder="0.00">
+                            </div>
+                            <p class="text-sm text-gray-500 mt-1">You will receive: <span id="tokenEstimate">0.00</span> TKN</p>
+                        </div>
+                        <button id="buyWithUsdt" class="btn-modern gradient-primary text-white px-6 py-3 rounded-lg w-full">Buy with USDT</button>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Purchase with ETH</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="form-label">ETH Amount</label>
+                            <input type="number" id="ethAmount" class="form-input" placeholder="0.00">
+                            <p class="text-sm text-gray-500 mt-1">You will receive: <span id="ethTokenEstimate">0.00</span> TKN</p>
+                        </div>
+                        <button id="buyWithEth" class="btn-primary w-full">Buy with ETH</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Purchase History -->
+        <div class="card">
+            <h2 class="text-xl font-bold mb-4">Purchase History</h2>
+            <div class="overflow-x-auto">
+                <table class="modern-table">
+                    <thead>
+                        <tr>
+                            <th class="table-header px-6 py-3">Date</th>
+                            <th class="table-header px-6 py-3">Amount Paid</th>
+                            <th class="table-header px-6 py-3">Tokens Received</th>
+                            <th class="table-header px-6 py-3">Status</th>
+                            <th class="table-header px-6 py-3">Transaction Hash</th>
+                        </tr>
+                    </thead>
+                    <tbody id="purchaseHistory" class="divide-y divide-gray-200">
+                        <!-- Purchase history will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
